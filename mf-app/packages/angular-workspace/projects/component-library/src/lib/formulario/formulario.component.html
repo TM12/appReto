@@ -1,0 +1,56 @@
+<div class="form-group" >
+    <form [formGroup]="form1" novalidate (ngSubmit)="guardar()">
+        <input type="hidden" class="form-control" id="id" aria-describedby="id" formControlName="id" placeholder="">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="form-group" >
+                            <label for="nombres">Nombres</label>
+                            <input type="text" class="form-control" id="nombres" aria-describedby="nombres" formControlName="nombres" placeholder="">
+                            <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="form-group" >
+                            <label for="apaterno">Apellido paterno</label>
+                            <input type="text" class="form-control" id="apaterno" aria-describedby="apaterno" formControlName="apaterno" placeholder="">
+                            <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="amaterno">Apellido materno</label>
+                        <input type="text" class="form-control" id="amaterno" aria-describedby="amaterno" formControlName="amaterno" placeholder="">
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="celectronico">Correo electrónico</label>
+                        <input type="email" class="form-control" id="celectronico" aria-describedby="celectronico" formControlName="celectronico" placeholder="">
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="ncelular">Celular</label>
+                        <input type="number" class="form-control" id="ncelular" aria-describedby="ncelular" formControlName="ncelular" placeholder="">
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="nusuario">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="nusuario" aria-describedby="nusuario" formControlName="nusuario" placeholder="">
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" class="form-control" id="contrasena" aria-describedby="contrasena" formControlName="contrasena" placeholder="">
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">{{txtBoton}}</button>
+                    <button type="button" class="btn btn-danger ml-3" (click)="ocultarFormulario()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

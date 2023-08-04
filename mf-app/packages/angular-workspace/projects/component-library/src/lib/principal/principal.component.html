@@ -1,0 +1,2 @@
+<formulario [tipoBtn]="tipoBtn" [usuario]="usr" *ngIf="show" (showForm)="mostrarFormulario($event)"></formulario>
+<lista *ngIf="!show" (showForm)="mostrarFormulario($event)"></lista>
